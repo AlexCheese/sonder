@@ -81,6 +81,7 @@ enum MoveCondition {
     Team(u8),
     HasMoved,
     Piece,
+    PieceType(char),
     Enemy,
     Safe,
     EdgeOfBoard(u32),
