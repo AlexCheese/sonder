@@ -1,4 +1,5 @@
-fn generate_standard_game() -> Game {
+use super::*;
+pub fn generate_standard_game() -> Game {
     use Pattern::*;
     let mut map = HashMap::with_capacity(6);
     map.insert('r', PieceType {

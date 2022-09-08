@@ -1,6 +1,7 @@
 use std::collections::HashMap;
 use std::ops::Deref;
 
+mod util;
 struct Piece {
     id: char,
     team: u8,
@@ -88,7 +89,7 @@ enum MoveCondition {
 enum MoveAction {
     Teleport(Coord),
     SetFlag(u8, bool),
-    Transmute(Vec<PieceType>),
+    Transmute(Vec<char>),
     Destroy,
 }
 
